@@ -49,6 +49,9 @@ function Identification({ navigation }) {
   const onNavigateToHome = () => {
     navigation.navigate("Accueil");
   };
+  const onNavigateToRegister = () => {
+    navigation.navigate("CreateMembers");
+  };
   const header = (
     <View style={styles.header}>
       <Text style={styles.title}>{app.expo.name}</Text>
@@ -101,6 +104,9 @@ function Identification({ navigation }) {
         />
         <View style={styles.actions}>
           <Button title="S'identifier" onPress={onPress} />
+        </View>
+        <View style={styles.actions}>
+          <Button title="S'enregistrer" onPress={onNavigateToRegister} />
         </View>
       </View>
     </View>
